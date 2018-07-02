@@ -3,9 +3,13 @@
 #
 
 import pandas as pd
+pd.core.common.is_list_like = pd.api.types.is_list_like
+
 from pandas_datareader import data as pdr
-from stockstats import StockDataFrame as Sdf
 import fix_yahoo_finance as yf
+
+from stockstats import StockDataFrame as Sdf
+
 from datetime import datetime
 from datetime import timedelta
 #
